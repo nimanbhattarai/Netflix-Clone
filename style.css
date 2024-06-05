@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/dd4dfce3-1a39-4b1a-8e19-b7242da17e68/18d0a597-bfe0-4b38-9818-9b3528e889bc/NP-en-20240527-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    height: 100vh;
+    position: relative;
+    background-position: center center;
+
+    background-repeat: no-repeat;
+    background-size: max(1000px, 100vw);
+
+}
+
+.main .box {
+    height: 100vh;
+    width: 100%;
+    opacity: 0.7;
+    text-align: center;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 75vw;
+}
+
+nav img {
+    color: red;
+    width: 150px;
+    position: relative;
+    z-index: 10;
+    margin-top: 15px;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+
+}
+
+.text {
+    font-family: "Martel Sans", sans-serif;
+    color: white;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 30px;
+    height: calc(100% - 65px);
+}
+@media screen and (min-width:500px){
+    .text{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.text .large {
+    font-size: 48px;
+    font-weight: 900;
+    font-style: normal;
+    text-align: center;
+}
+
+.text .small {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.text .smaller {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+.seperations {
+    height: 5px;
+    background-color: grey;
+}
+
+.btn-red-top {
+    background-color: red;
+    color: white;
+    font-family: "Martel Sans", sans-serif;
+    font-weight: bolder;
+    padding: 3px 18px;
+    border-radius: 5px;
+    font-weight: bolder;
+    border:black;
+    cursor: pointer;
+
+}
+
+.btn-red-top:hover{
+    background-color: rgb(156, 13, 13);
+}
+
+.btn {
+    padding: 3px 88px 6px 7px;
+    background-color: rgba(43, 40, 40, 0.7);
+    color: rgb(255, 255, 255);
+    font-family: "Martel Sans", sans-serif;
+    border: white;
+    
+}
+.btn:hover{
+    background-color: rgba(65, 60, 60, 0.7);
+}
+
+.btn-red-bottom {
+    background-color: red;
+    color: white;
+    padding: 12px 40px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bolder;
+    border:black;
+    cursor: pointer;
+    
+}
+.btn-red-bottom:hover{
+    background-color: rgb(156, 13, 13);
+}
+
+.email-box {
+    background-color: rgba(43, 40, 40, 0.7);
+    color: white;
+    padding: 10px 136px 12px 9px;
+    border-radius: 4px;
+    font-size: 16px;
+    border: 1px solid rgb(105, 100, 100);
+    
+}
+
+.emailbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.btn-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.first{
+    display:flex;
+    max-width: 70vw;
+    justify-content: center;
+    margin:auto;
+    color:white;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;   
+
+}
+@media screen and (max-width:1100px) {
+    .first{
+        flex-wrap: wrap;
+    }
+}
+
+.secImg {
+    position: relative;
+}
+.secImg img{
+    width: 410px;
+    position: relative;
+    z-index: 10;
+}
+.secImg video{
+    position: absolute;
+    top: 80px;
+    right: 5px;
+    width: 478px;
+}
+
+section.first > div {
+    display: flex;
+    flex-direction: column;
+}
+
+section.first > div :nth-child(1){
+    font-weight: 800;
+    font-family: "Martel Sans", sans-serif;
+    font-size: 35px;
+    
+
+}
+section.first > div :nth-child(2){
+    font-family: "Martel Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    
+}
+
+.second{
+    display: flex;
+}
+
+section.second > div :nth-child(1){
+    color: rgb(255 255 255);
+}
+
+.second img{
+    width: 30vw;
+}
+.secImg video{
+
+    position: absolute;
+    z-index: 1;
+    top: 24px;
+    right: -50px;
+    scale: 0.69;
+}
+.third .secImg video{
+    max-width: 45vw;
+    top: -33px;
+    scale: 0.55;
+    left: -35px;
+}
+@media screen and (min-width:500px ) and (max-width:1100px){
+    .third .secImg video{
+        max-width: 45vw;
+        top: -25px;
+        scale: 0.56;
+        left: -39px;
+    
+    }
+    
+}
+.faq h1{
+    font-family: "Martel Sans", sans-serif;
+    text-align: center;
+    font-weight: 900;
+    font-size: 40px;
+}
+.faq{
+    font-family: "Martel Sans", sans-serif;
+    color: white;
+    padding:30px;
+    
+}
+
+.faq-box:hover {
+    background-color: #1d1b1b;
+}
+
+.faq-box{
+    display: flex;
+    justify-content: space-between;
+    color:white;
+    background-color: #2d2d2d;
+    padding:24px;
+    max-width:65vw;
+    margin:17px auto;
+    cursor: pointer;
+    font-size: 15px;
+}
+.last-email{
+    font-family: "Martel Sans", sans-serif;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    
+}
+.email-btn{
+    display: flex;
+    gap:10px;
+    padding: 15px;
+}
+.email-btn input{
+    background-color: #0f0f0f;
+    border: #4a4a4a;
+    padding: 15px;
+    width: 25vw;
+    border-radius: 5px;
+    
+
+}
+.email-btn button{
+    background-color: red;
+    padding: 15px;
+    width: 10vw;
+    color: white;
+    border: black;
+    border-radius: 5px;
+}
+.email-btn button:hover{
+    background-color: rgb(156, 13, 13);
+    cursor: pointer;
+}
+footer{
+    padding: 30px;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-family: "Martel Sans", sans-serif;
+    font-size: 12px;
+    
+}
+
+@media screen and (max-width:660px){
+    footer{
+        padding: 30px;
+        color: white;
+        display: grid;
+        grid-template-columns: 1fr;
+        font-family: "Martel Sans", sans-serif;
+        font-size: 12px;
+        text-align: center;
+        
+    }
+}
+.footer-items{
+    display: flex;
+    flex-direction: column;
+    max-width: 60vw;
+    margin:auto;
+    gap:15px;
+}
+footer a{
+    color: white;
+    padding:2px;
+    font-size: 12px;
+}
+
+
+
+
